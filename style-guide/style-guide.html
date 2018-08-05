@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" class="template no-js">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Style Guide | TEXAS.Crypto - Development Documentation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="/assets/img/apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/pple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+	<meta name="description" content="Always use a styleguide">
+	<meta property="og:image" content="http://159.89.228.6/assets/img/opengraph-image.png">
+	<!--[if !IE 8]><!-->
+	<link href="./assets/css/new-main.css" rel="stylesheet" media="all" />
+	<link href="./assets/css/_footer.scss" rel="stylesheet" media="all" />
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+    <link href="/stylesheets/main-ie8-8a40cc5fe763c28f9e4bbb459a98f4af.css" rel="stylesheet" media="all" />
+    <script src="/javascripts/ie-a8e7778041ff37c18b1dc480185bfa3f.js"></script>
+  <![endif]-->
+	<link rel="canonical" href="http://159.89.228.6/styleguide/" />
+	<script src="./assets/js/modernizr.js"></script>
+
+	<meta property="og:image" content="./assets/img/opengraph-image.png"> </head>
+
+<body class="template__body ">
+	<script>
+		document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+	</script> <a href="#main-content" class="skip-link">Skip to main content</a>
+	<div class="app-pane app-pane--enabled">
+		<div class="app-cookie-banner js-cookie-banner">
+			<p class="app-cookie-banner__message">TEXAS.Crypto uses cookies make the site simpler. <a href="/cookies" class="link">Find out more about cookies</a></p>
+		</div>
+		<div class="app-pane__header">
+<!-- header -->
+
+<header class="header " role="banner" data-module="header">
+	<div class="header__container width-container">
+		<div class="header__logo"> <a href="#" class="header__link header__link--homepage"><span class="header__logotype"><image src="./assets/img/TX-Crypto.png" class="header__logotype-crown-fallback-image"></image>
+			 <span class="header__logotype-text">
+			 TX.CRYPTO
+			 </span></span>
+			</a> </div>
+		<div class="header__content"><a href="#" class="header__link header__link--service-name">FIND</a>
+			<button role="button" class="header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+			<nav>
+				<ul id="navigation" class="header__navigation " aria-label="Top Level Navigation">
+					<li class="header__navigation-item header__navigation-item--active"><a class="header__link" href="#services">
+							Crypto ATMs Services &amp; Stores </a> </li>
+					<li class="header__navigation-item"><a class="header__link" href="#events">
+							Crypto Events
+					 </a></li>
+					<li class="header__navigation-item"><a class="header__link" href="#people">
+							Crypto Members
+					 </a></li>
+					<li class="header__navigation-item"><a class="header__link" href="#team">
+							Team
+					 </a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<!--
+
+			<header class="app-header" role="banner">
+				<a href="/" class="link app-header__link"> <span class="app-header__logotype">
+
+
+        <image src="./assets/img/TX-crypto.png" xlink:href="" class="app-header__logotype-crown-fallback-image"></image>
+      </svg>
+      <span class="app-header__logotype-text">
+        TEXAS.Crypto
+      </span> </span> <span class="app-header__title">
+      styleguide
+    </span> </a>
+				<div class="app-header-mobile-nav-toggler-wrapper">
+					<button id="app-mobile-nav-toggler" class="button app-header-mobile-nav-toggler js-app-mobile-nav-toggler"> Menu </button>
+				</div>
+			</header> -->
+			<!-- banner -->
+			<div class="phase-banner !-padding-left-3 !-padding-right-3">
+				<p class="phase-banner__content"><strong class="tag phase-banner__content__tag ">
+  beta
+</strong> <span class="phase-banner__text">
+    your <a class="link" href="/get-in-touch">feedback</a> will help us to improve our site.
+    </span> </p>
+			</div>
+		</div>
+		<div class="app-pane__nav">
+			<nav class="app-navigation clearfix">
+				<ul class="app-navigation__list">
+					<li> <a class="link" href="/get-started" data-topnav="Get started">Get started</a> </li>
+					<li class="app-navigation--current-page"> <a class="link" href="/styleguide" data-topnav="Styles">Styleguide</a> </li>
+					<li> <a class="link" href="/architecture" data-topnav="Components">Architecture</a> </li>
+					<li> <a class="link" href="/dev-toolkit" data-topnav="Patterns">Dev Toolkit</a> </li>
+					<li> <a class="link" href="/team-workflow" data-topnav="Community">Team workflow</a> </li>
+					<li> <a class="link" href="/tech-support" data-topnav="Community">Tech support</a> </li>
+				</ul>
+			</nav>
+			<nav id="app-mobile-nav" class="app-mobile-nav js-app-mobile-nav" role="navigation">
+				<ul class="app-mobile-nav__list">
+					<li> <a class="link js-mobile-nav-subnav-toggler" href="/get-started">Get started</a>
+						<ul class="app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--hidden">
+							<li> <a class="link" href="/get-started">Get started overview</a> </li>
+							<li>
+								<ul class="app-mobile-nav__theme-nav">
+									<li> <a class="link" href="/get-started/prototyping">Prototyping</a> </li>
+									<li> <a class="link" href="/get-started/production">Production</a> </li>
+									<li> <a class="link" href="/get-started/updating-your-code">Updating your code</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li> <a class="link js-mobile-nav-subnav-toggler" href="/styles">Styles</a>
+						<ul class="app-mobile-nav__subnav js-app-mobile-nav-subnav ">
+							<li> <a class="link" href="/styles">Styles overview</a> </li>
+							<li>
+								<ul class="app-mobile-nav__theme-nav">
+									<li class="current-page"> <a class="link" href="/styles/colour">Colour</a> </li>
+									<li> <a class="link" href="/styles/images">Images</a> </li>
+									<li> <a class="link" href="/styles/layout">Layout</a> </li>
+									<li> <a class="link" href="/styles/page-template">Page template</a> </li>
+									<li> <a class="link" href="/styles/spacing">Spacing</a> </li>
+									<li> <a class="link" href="/styles/typography">Typography</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li> <a class="link js-mobile-nav-subnav-toggler" href="/components">Components</a>
+						<ul class="app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--hidden">
+							<li> <a class="link" href="/components">Components overview</a> </li>
+							<li>
+								<ul class="app-mobile-nav__theme-nav">
+									<li> <a class="link" href="/components/back-link">Back link</a> </li>
+									<li> <a class="link" href="/components/breadcrumbs">Breadcrumbs</a> </li>
+									<li> <a class="link" href="/components/button">Button</a> </li>
+									<li> <a class="link" href="/components/checkboxes">Checkboxes</a> </li>
+									<li> <a class="link" href="/components/date-input">Date input</a> </li>
+									<li> <a class="link" href="/components/details">Details</a> </li>
+									<li> <a class="link" href="/components/error-message">Error message</a> </li>
+									<li> <a class="link" href="/components/error-summary">Error summary</a> </li>
+									<li> <a class="link" href="/components/fieldset">Fieldset</a> </li>
+									<li> <a class="link" href="/components/file-upload">File upload</a> </li>
+									<li> <a class="link" href="/components/footer">Footer</a> </li>
+									<li> <a class="link" href="/components/header">Header</a> </li>
+									<li> <a class="link" href="/components/inset-text">Inset text</a> </li>
+									<li> <a class="link" href="/components/panel">Panel</a> </li>
+									<li> <a class="link" href="/components/phase-banner">Phase banner</a> </li>
+									<li> <a class="link" href="/components/radios">Radios</a> </li>
+									<li> <a class="link" href="/components/select">Select</a> </li>
+									<li> <a class="link" href="/components/skip-link">Skip link</a> </li>
+									<li> <a class="link" href="/components/table">Table</a> </li>
+									<li> <a class="link" href="/components/tabs">Tabs</a> </li>
+									<li> <a class="link" href="/components/tag">Tag</a> </li>
+									<li> <a class="link" href="/components/text-input">Text input</a> </li>
+									<li> <a class="link" href="/components/textarea">Textarea</a> </li>
+									<li> <a class="link" href="/components/warning-text">Warning text</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li> <a class="link js-mobile-nav-subnav-toggler" href="/patterns">Patterns</a>
+						<ul class="app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--hidden">
+							<li> <a class="link" href="/patterns">Patterns overview</a> </li>
+							<li>
+								<h4 class="app-mobile-nav__theme">Ask users for...</h4>
+								<ul class="app-mobile-nav__theme-nav">
+									<li> <a class="link" href="/patterns/addresses">Addresses</a> </li>
+									<li> <a class="link" href="/patterns/dates">Dates</a> </li>
+									<li> <a class="link" href="/patterns/email-addresses">Email addresses</a> </li>
+									<li> <a class="link" href="/patterns/gender-or-sex">Gender or sex</a> </li>
+									<li> <a class="link" href="/patterns/names">Names</a> </li>
+									<li> <a class="link" href="/patterns/national-insurance-numbers">National Insurance numbers</a> </li>
+									<li> <a class="link" href="/patterns/passwords">Passwords</a> </li>
+									<li> <a class="link" href="/patterns/telephone-numbers">Telephone numbers</a> </li>
+								</ul>
+							</li>
+							<li>
+								<h4 class="app-mobile-nav__theme">Help users to...</h4>
+								<ul class="app-mobile-nav__theme-nav">
+									<li> <a class="link" href="/patterns/check-a-service-is-suitable">Check a service is suitable</a> </li>
+									<li> <a class="link" href="/patterns/check-answers">Check answers</a> </li>
+									<li> <a class="link" href="/patterns/confirm-an-email-address">Confirm an email address</a> </li>
+									<li> <a class="link" href="/patterns/create-a-username">Create a username</a> </li>
+									<li> <a class="link" href="/patterns/create-accounts">Create accounts</a> </li>
+								</ul>
+							</li>
+							<li>
+								<h4 class="app-mobile-nav__theme">Pages</h4>
+								<ul class="app-mobile-nav__theme-nav">
+									<li> <a class="link" href="/patterns/confirmation-pages">Confirmation pages</a> </li>
+									<li> <a class="link" href="/patterns/page-not-found-pages">Page not found pages</a> </li>
+									<li> <a class="link" href="/patterns/problem-with-the-service-pages">There is a problem with the service pages</a> </li>
+									<li> <a class="link" href="/patterns/question-pages">Question pages</a> </li>
+									<li> <a class="link" href="/patterns/service-unavailable-pages">Service unavailable pages</a> </li>
+									<li> <a class="link" href="/patterns/start-pages">Start pages</a> </li>
+									<li> <a class="link" href="/patterns/task-list-pages">Task list pages</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li> <a class="link js-mobile-nav-subnav-toggler" href="/community">Community</a>
+						<ul class="app-mobile-nav__subnav js-app-mobile-nav-subnav app-mobile-nav__subnav--hidden">
+							<li> <a class="link" href="/community">Community overview</a> </li>
+							<li>
+								<ul class="app-mobile-nav__theme-nav">
+									<li> <a class="link" href="/community/backlog">Backlog</a> </li>
+									<li> <a class="link" href="/community/how-you-can-contribute">How you can contribute</a> </li>
+									<li> <a class="link" href="/community/contribution-criteria">Contribution criteria</a> </li>
+									<li> <a class="link" href="/community/design-system-working-group">Design System working group</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="app-pane__body">
+			<div class="app-pane__subnav app-hide-mobile">
+				<nav class="app-subnav">
+					<ul class="app-subnav__section">
+						<li class="app-subnav__section-item app-subnav__section-item--current"> <a class="link" href="/styles/colour">Colour</a> </li>
+						<li class="app-subnav__section-item"> <a class="link" href="/styles/images">Images</a> </li>
+						<li class="app-subnav__section-item"> <a class="link" href="/styles/layout">Layout</a> </li>
+						<li class="app-subnav__section-item"> <a class="link" href="/styles/page-template">Page template</a> </li>
+						<li class="app-subnav__section-item"> <a class="link" href="/styles/spacing">Spacing</a> </li>
+						<li class="app-subnav__section-item"> <a class="link" href="/styles/typography">Typography</a> </li>
+					</ul>
+				</nav>
+			</div>
+			<div class="app-pane__content">
+				<main id="main-content" class="app-content" role="main">
+					<div class="app-content__header">
+						<h1 class="heading-xl">
+							<span class="caption-xl">
+              Styles
+          </span> Colour
+						</h1> </div>
+					<div class="app-prose-scope">
+						<p>Always use the TEXAS.Crypto colour palette.</p>
+						<h2 id="colour-contrast">Colour contrast</h2>
+						<p>You must make sure that the contrast ratio of text and interactive elements in your service meets <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">level AA of the Web Content Accessibility Guidelines
+(WCAG 2.0)</a></p>
+						<h2 id="sass-variables">Sass variables</h2>
+						<p>Use the Sass variables listed below, so you’ll automatically get any updates to the TEXAS.Crypto colour palette when you update TEXAS.Crypto Frontend.</p>
+						<h2 id="main-colours">Main colours</h2>
+						<table class="body app-colour-list" summary="Table of main colours">
+							<tbody>
+								<tr>
+									<td colspan="3">
+										<h3 class="heading-m ">
+											Text
+										</h3> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#0b0c0c"></span> <code>$text-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #0b0c0c </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#6f777b"></span> <code>$secondary-text-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #6f777b </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<h3 class="heading-m !-padding-top-6">
+											Links
+										</h3> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#005ea5"></span> <code>$link-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #005ea5 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#2b8cc4"></span> <code>$link-hover-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #2b8cc4 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#4c2c92"></span> <code>$link-visited-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #4c2c92 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<h3 class="heading-m !-padding-top-6">
+											Border
+										</h3> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#bfc1c3"></span> <code>$border-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #bfc1c3 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<h3 class="heading-m !-padding-top-6">
+											Focus
+										</h3> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#ffbf47"></span> <code>$focus-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #ffbf47 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<h3 class="heading-m !-padding-top-6">
+											Status
+										</h3> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#005ea5"></span> <code>colour(&quot;blue&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #005ea5 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> Use for phase banners </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name" scope="row"> <span class="app-swatch " style="background-color:#b10e1e"></span> <code>$error-colour</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #b10e1e </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> Use for error messages </td>
+								</tr>
+							</tbody>
+						</table>
+						<h2 id="greyscale">Greyscale</h2>
+						<table class="body app-colour-list" summary="Table of greyscale colours">
+							<tbody>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#0b0c0c"></span> <code>colour(&quot;black&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #0b0c0c </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#6f777b"></span> <code>colour(&quot;grey-1&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #6f777b </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#bfc1c3"></span> <code>colour(&quot;grey-2&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #bfc1c3 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#dee0e2"></span> <code>colour(&quot;grey-3&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #dee0e2 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#f8f8f8"></span> <code>colour(&quot;grey-4&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #f8f8f8 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+							</tbody>
+						</table>
+						<h2 id="extended-colours">Extended colours</h2>
+						<p>Use these colours for graphs and supporting material.</p>
+						<p>If you need to use tints of the extended palette, use either 25% or 50%.</p>
+						<p>You can find departmental colours in the TEXAS.Crypto Frontend <a href="https://github.com/alphagov/frontend/blob/master/src/settings/_colours-organisations.scss">_colours-organisations</a> file.</p>
+						<table class="body app-colour-list" summary="Table of extended colours">
+							<tbody>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#b10e1e"></span> <code>colour(&quot;red&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #b10e1e </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#df3034"></span> <code>colour(&quot;bright-red&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #df3034 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#f47738"></span> <code>colour(&quot;orange&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #f47738 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#b58840"></span> <code>colour(&quot;brown&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #b58840 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#ffbf47"></span> <code>colour(&quot;yellow&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #ffbf47 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#85994b"></span> <code>colour(&quot;light-green&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #85994b </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#006435"></span> <code>colour(&quot;green&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #006435 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#28a197"></span> <code>colour(&quot;turquoise&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #28a197 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#2b8cc4"></span> <code>colour(&quot;light-blue&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #2b8cc4 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#005ea5"></span> <code>colour(&quot;blue&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #005ea5 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#6f72af"></span> <code>colour(&quot;light-purple&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #6f72af </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#2e358b"></span> <code>colour(&quot;purple&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #2e358b </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#912b88"></span> <code>colour(&quot;bright-purple&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #912b88 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#d53880"></span> <code>colour(&quot;pink&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #d53880 </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+								<tr class="app-colour-list-row">
+									<th class="app-colour-list-column app-colour-list-column--name"> <span class="app-swatch " style="background-color:#f499be"></span> <code>colour(&quot;light-pink&quot;)</code> </th>
+									<td class="app-colour-list-column app-colour-list-column--colour"> #f499be </td>
+									<td class="app-colour-list-column app-colour-list-column--notes"> </td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="app-contact-panel">
+						<h2 class="app-contact-panel__heading">Get in touch</h2>
+						<p class="app-contact-panel__body">If you’ve got a question, idea or suggestion share it in <a class="link app-contact-panel__link" href="https://ukgovernmentdigital.slack.com/messages/design-system">#design-system</a> on cross-government Slack (<a class="link app-contact-panel__link" href="slack://channel?team=T04V6EBTR&amp;id=C6DMEH5R6">open in app</a>) or email the Design System team on <a class="link app-contact-panel__link" href="mailto:design-system-support@digital.cabinet-office.TEXAS.Crypto">design-system-support@digital.cabinet-office.TEXAS.Crypto</a></p>
+					</div>
+					<p class="body !-margin-bottom-0"><a class="link" href="https://github.com/alphagov/design-system-backlog/issues/38">Discuss ‘Colour’ on GitHub</a></p>
+				</main>
+				<footer class="footer " id="footer" role="contentinfo">
+					<div class="width-container ">
+						<div class="footer-categories">
+							<div class="footer-about">
+								<h2><a id="services">Crypto ATMs &amp; Services</a>
+								</h2>
+								<ul>
+									<li><a class="footer__link" href="#">ATM Near Me</a></li>
+									<li><a class="footer__link" href="#">Stores</a></li>
+									<li><a class="footer__link" href="#">Restaurants</a></li>
+									<li><a class="footer__link" href="#">Things to do</a></li>
+									<li><a class="footer__link" href="#">Hotels</a></li>
+									<li><a class="footer__link" href="#">Hostels</a></li>
+									<li><a class="footer__link" href="#">Vacation Rentals</a></li>
+									<li><a class="footer__link" href="#">Flights</a></li>
+									<li><a class="footer__link" href="#">ATM Near Me</a></li>
+									<li><a class="footer__link" href="#">ATM Near Me</a></li>
+									<li><a class="footer__link" href="#">Road trips</a></li>
+									<li><a class="footer__link" href="#">Best of 2018</a></li>
+								</ul>
+							</div>
+							<div class="footer-buyers">
+								<h2>
+									<a id="events">Crypto Events</a>
+								</h2>
+								<ul>
+									<li><a class="footer__link" href="#">Sections</a></li>
+									<li><a class="footer__link" href="#">Cities</a></li>
+									<li><a class="footer__link" href="#">near me</a></li>
+									<li><a class="footer__link" href="#">G-Cloud supplier A–Z</a></li>
+									<li><a class="footer__link" href="#">Hosting framework</a></li>
+									<li><a class="footer__link" href="#">Commercial Service</a></li>
+								</ul>
+							</div>
+							<div class="footer-suppliers">
+								<h2>
+									<a id="people">Crypto swipe</a>
+								</h2>
+								<ul>
+									<li><a class="footer__link" href="#">WELCOME</a></li>
+									<li><a class="footer__link" href="#">ABOUT</a></li>
+									<li><a class="footer__link" href="#">MINDSET</a></li>
+									<li><a class="footer__link" href="#">USER STORIES</a></li>
+									<li><a class="footer__link" href="#">TEAM</a></li>
+									<li><a class="footer__link" href="#">CONTACT US</a></li>
+									<li><a class="footer__link" href="#">SUPPORT</a></li>
+									<li><a class="footer__link" href="#">VLOG</a></li>
+									<li><a class="footer__link" href="h#">COMMUNITIES</a></li>
+									<li><a class="footer__link" href="#">MEET FINNEY</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<footer class="footer " role="contentinfo">
+					<div class="width-container ">
+						<div class="footer__meta">
+							<div class="footer__meta-item footer__meta-item--grow">
+								<h2 class="visually-hidden"><a id="team">Team</a></h2>
+								<ul class="footer__inline-list">
+									<li class="footer__inline-list-item"><a class="footer__link" href="https://github.com/shkeletor">
+			                  Anatoly Bourov
+			               </a></li><img class="avatar" src="assets/img/shkeletor-thumbnail.jpg" width="32" height="32" alt="@shkeletor">
+									<li class="footer__inline-list-item">
+										<a class="footer__link" href="https://github.com/charlesfinney"><img src="./assets/img/finney-thumbnail.png" width="32" height="32" alt="@Finney"> Charles Finney</a>
+									</li>
+									<li class="footer__inline-list-item">
+										<a class="footer__link" href="https://github.com/troosey"><img src="./assets/img/troosey-thumbnail.png" width="32" height="32" alt="@troosey"> Tim Roosevelt</a>
+									</li>
+									<li class="footer__inline-list-item"><img class="avatar" src="./assets/img/star-thumbnail.gif" width="32" height="32" alt="@star"><a class="footer__link" href="#4">
+			                  Contact
+			               </a></li>
+								</ul><img src="./assets/img/88px-License_icon-mit-88x31-2.svg.png" class="footer__licence-logo" />
+								<!--Footer Crest  --><span class="footer__licence-description">
+			          All content is available under the
+			         <a class="footer__link" href="https://choosealicense.com/licenses/mit/" rel="license">MIT Licence</a>, except where otherwise stated
+			       </span></div>
+							<div class="footer__meta-item">
+								<a class="footer__link footer__copyright-logo" href="https://gitlab.com/charlesfinney"><img src="assets/img/gitlab-logo.png" width="16px" alt="GitLab logo">&nbsp;GitLab Link</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/js/iframeResizer.contentWindow.js"></script>
+		<script src="./assets/js/frontend.js"></script>
+		<script src="/javascripts/frontend.js"></script>
+		<script src="./assets/js/surveys.js"></script>
+</body>
+
+</html>
